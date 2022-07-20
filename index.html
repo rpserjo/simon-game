@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Simon game</title>
+	<link rel="stylesheet" href="style.css" type="text/css"/>
+	<script type="text/javascript" src="script.js"></script>
+</head>
+<body>
+	<div class="wrap">
+		<div class="content">
+			<div class="board">
+				<div class="row">
+					<div id="crimson" class="element" style="background-color: crimson;"></div>
+					<div id="teal" class="element" style="background-color: teal;"></div>
+					<div id="blue" class="element" style="background-color: blue;"></div>
+				</div>
+				<div class="row">
+					<div id="yellow" class="element" style="background-color: yellow;"></div>
+					<div id="coral" class="element" style="background-color: coral;"></div>
+					<div id="indigo" class="element" style="background-color: indigo;"></div>
+				</div>
+				<div class="row">
+					<div id="green" class="element" style="background-color: green;"></div>
+					<div id="brown" class="element" style="background-color: brown;"></div>
+					<div id="purple" class="element" style="background-color: purple;"></div>
+				</div>
+				<div id="message">Message</div>
+			</div>
+			<div class="row row2">
+				<label for="level">Level:</label>
+				<select id="level">
+				</select>
+			</div>
+			<div class="row row2">
+				<button onclick="startGame()">Start new game</button>			
+			</div>
+			<div class="row row2" id="log"></div>			
+		</div>
+	</div>
+</body>
+</html>
